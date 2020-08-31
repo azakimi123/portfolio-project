@@ -1,0 +1,31 @@
+@import '../../config.scss';
+
+.about-container{
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  font-family:$font-stack1;
+  @include flex-center;
+
+  h1{
+    font-size: 100px;
+  }
+}
+
+.about-box{
+  display: flex;
+  padding: 50px;
+  box-shadow: $border-shadow;
+  margin: 40px;
+  margin-bottom: 40px;
+  p{
+    font-size: 40px;
+    padding: 30px;
+  }
+}
+
+.family-photo{
+  width: 40vw;
+  border-radius: 2%;
+  box-shadow: $border-shadow;
+}
