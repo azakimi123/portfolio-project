@@ -3,7 +3,7 @@
 
 .nav{
   width: 100vw;
-  height: 100px;
+  height: 150px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -13,26 +13,35 @@
   /* background: blue; */
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
+  
 }
 
 .nav-links{
-  width: 600px;
+  width: 650px;
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
   text-decoration-color: white;
+  
+}
+
+.nav-logo{
+  width: 6vw;
 }
 
 .nav-name{
-  margin-left: 200px;
-  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
 }
 
-.links{
-  text-decoration: none;
-  /* color: white; */
-  color: black;
-  font-size: 20px;
-  scroll-behavior: smooth;
+.nav-links{
+  font-family: $font-stack1;
+  font-size: 30px;
+
+  span:hover{
+    cursor: pointer;
+    color: lightgrey;
+  }
 }
+

@@ -1,0 +1,42 @@
+@import '../../config.scss';
+
+.skills-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: $font-stack1;
+  font-size: 50px;
+}
+
+.skills-icon-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  p{
+    margin-top: 0px;
+  }
+}
+
+.skills-icon-container2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: -400px;
+
+  p{
+    margin-top: 0px;
+  }
+}
+
+.skills-icon{
+  width: 6vw;
+}
+
+.skills-icon2{
+  width: 7.5vw;
+}

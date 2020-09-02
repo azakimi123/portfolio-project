@@ -49,8 +49,22 @@ function Home(props){
                 <p
                   ref={el => {t2 = el}}
                   className='main-title2'
-                  >Full Stack Web Developer</p>
+                  >Passionate About Learning & Teaching</p>
               </div>
+              <section className='home-icons-section'>
+                <section>
+                  <img className='home-icons' src='https://image.flaticon.com/icons/svg/2111/2111432.svg' alt='github'/>
+                  <p>GitHub</p>
+                </section>
+                <section>
+                  <img className='home-icons' src='https://image.flaticon.com/icons/svg/2111/2111532.svg' alt='linkedin'/>
+                  <p>Linkedin</p>
+                </section>
+                <section>
+                  <img className='home-icons' src='https://image.flaticon.com/icons/svg/942/942799.svg' alt='resume'/>
+                  <p>Resume</p>
+                </section>
+              </section>
           </div>
         </div>
     )
