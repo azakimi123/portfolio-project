@@ -1,0 +1,37 @@
+@import '../../config.scss';
+
+
+.projects-container{
+  width: 100vw;
+  height: 100vh;
+  margin-top: 80px;
+  text-align: center;
+  font-family: $font-stack1;
+
+  h1{
+    font-size: 80px;
+    padding-top: 40px;
+    margin-bottom: -30px;
+    // background:white;
+  }
+}
+
+
+.projects-box{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  // margin-top: 20px;
+
+  p{
+    font-size: 40px;
+  }
+}
+
+.image{
+  width: 45vw;
+  // margin-top: 5px;
+  box-shadow: $border-shadow;
+  border-radius: 7px;
+}
