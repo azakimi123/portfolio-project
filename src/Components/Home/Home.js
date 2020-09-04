@@ -53,15 +53,21 @@ function Home(props){
               </div>
               <section className='home-icons-section'>
                 <section>
+                  <a href='https://github.com/azakimi123' target='_blank'>
                   <img className='home-icons' src='https://image.flaticon.com/icons/svg/2111/2111432.svg' alt='github'/>
+                  </a>
                   <p>GitHub</p>
                 </section>
                 <section>
+                  <a href='https://www.linkedin.com/in/aaron-zakimi/' target='_blank'>
                   <img className='home-icons' src='https://image.flaticon.com/icons/svg/2111/2111532.svg' alt='linkedin'/>
+                  </a>
                   <p>Linkedin</p>
                 </section>
                 <section>
+                  <a href='https://drive.google.com/file/d/1mIO9bqJlxQONP5KFFMOeva23D7u_WQi8/view?usp=sharing' target='_blank'>
                   <img className='home-icons' src='https://image.flaticon.com/icons/svg/942/942799.svg' alt='resume'/>
+                  </a>
                   <p>Resume</p>
                 </section>
               </section>

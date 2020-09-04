@@ -1,0 +1,92 @@
+@import '../../config.scss';
+
+
+.contact-main-page{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-stack1;
+
+  h2{
+      font-size: 60px;
+      margin-top: 130px;
+  }
+  
+}
+
+
+.contact-text{
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: -50px;
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.contact-text2{
+  font-size: 25px;
+  margin-top: -50px;
+  margin-bottom: 70px;
+
+}
+
+form{
+  width:47vw;
+  height: 60vh;
+  display:flex;
+  flex-direction: column;
+  // align-items: center;
+  box-shadow: $border-shadow;
+  margin: 40px;
+  background: rgb(214, 214, 214);
+
+  .input{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 15px;
+      font-size: 25px;
+  }
+
+  .contact-name-input{
+      width: 300px;
+      height: 20px;
+      margin-top: 10px;
+  }
+
+  .contact-email-input{
+      width: 300px;
+      height: 20px;
+      margin-top: 10px;
+  }
+
+  .contact-message-input{
+      width: 500px;
+      height: 100px;
+      margin-top: 10px;
+  }
+
+  .contact-send{
+      width:80px;
+      height: 30px;
+      margin-left: 25px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      color: white;
+      background: rgb(175, 175, 175);
+      border: none;
+  
+      &:hover{
+          background: grey;
+          cursor: pointer;
+      }
+  }
+}
