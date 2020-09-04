@@ -4,10 +4,12 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
+  // align-items: center;
   flex-direction: column;
   font-family: $font-stack1;
-  font-size: 50px;
+  text-align: center;
+  font-size: 45px;
 }
 
 .skills-icon-container{
@@ -15,6 +17,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin-top: -40px;
 
   p{
     margin-top: 0px;
@@ -26,7 +29,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-top: -400px;
+  // margin-top: -300px;
 
   p{
     margin-top: 0px;

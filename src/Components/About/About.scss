@@ -9,24 +9,25 @@
 
   h1{
     font-size: 100px;
-    margin-bottom: 0px;
+    margin-bottom: -30px;
     margin-top: 105px;
   }
 }
 
 .about-box{
   width: 90vw;
-  height: 35vh;
+  height: 43vh;
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 40px;
   box-shadow: $border-shadow;
-  margin: 40px;
+  margin: 30px;
   margin-bottom: 120px;
+  background: rgb(235, 235, 235);
   // margin-bottom: 100px;
   p{
-    font-size: 40px;
-    padding: 30px;
+    font-size: 35px;
+    padding: 10px;
   }
 }
 
