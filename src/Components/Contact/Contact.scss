@@ -54,6 +54,16 @@ form{
       align-items: flex-start;
       margin: 15px;
       font-size: 25px;
+
+      input[type='text']{
+        font-family: $font-stack1;
+        font-size: 20px;
+      }
+  }
+
+  textarea{
+    font-family: $font-stack1;
+    font-size: 20px;
   }
 
   .contact-name-input{
@@ -83,6 +93,8 @@ form{
       color: white;
       background: rgb(175, 175, 175);
       border: none;
+      font-family: $font-stack1;
+      font-size: 25px;
   
       &:hover{
           background: grey;
