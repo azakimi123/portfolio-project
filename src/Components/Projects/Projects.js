@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Projects.scss';
 import PersonalProject from '../../images/landing.png';
 import GroupProject from '../../images/m2pDash.png';
+import Modal1 from './Modal1/Modal1';
 
 
 function Projects() {
@@ -13,7 +14,7 @@ function Projects() {
   console.log(toggle1)
   return(
     <div className='projects-container' id='section2'>
-      <h1 className='projects-title'>Projects</h1>
+      {toggle1 ? <h1 className='projects-title'>Lynne and Lee E-Commerce Site</h1> : toggle2 ? <h1 className='projects-title'>Meal Planning Web Application</h1> : <h1 className='projects-title'>Projects</h1>}
       <section className='projects-box'>
         {!toggle1
         ? <div className="container">
@@ -21,8 +22,7 @@ function Projects() {
           <img onClick={() => setToggle1(true)}  src={PersonalProject} alt="landing" className="image"/>
         </div>
         :<div className="modal-container">
-          <p>I'm a modal for personal project</p>
-          <img onClick={() => setToggle1(false)} className='exit-button' src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
+          <Modal1 toggle1Fn={setToggle1}/>
         </div>}
         {!toggle2
         ? <div className="container">
