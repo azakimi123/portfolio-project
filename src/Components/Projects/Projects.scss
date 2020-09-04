@@ -34,4 +34,30 @@
   // margin-top: 5px;
   box-shadow: $border-shadow;
   border-radius: 7px;
+  z-index: 1;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.modal-container{
+  width: 90vw;
+  height: 80vh;
+  background: lightgrey;
+  filter: opacity(.85);
+  position: absolute;
+  z-index: 3;
+}
+
+.exit-button{
+  position: relative;
+  top: -110px;
+  left: 495px;
+  width: 25px;
+  transform: scaleX(-1);
+
+  &:hover{
+    cursor: pointer;
+  }
 }
