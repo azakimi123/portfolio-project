@@ -19,8 +19,9 @@ function Projects() {
       <section className='projects-box'>
         {!toggle1
         ? <div className="container">
-          <p className='hover-link'>Link to Github</p>
-          <p>Lynne and Lee E-Commerce Site</p>
+            <div class="tooltip">Lynne and Lee E-Commerce Site
+              <a href='https://github.com/azakimi123/personal-project-lynne-and-lee' target='_blank'><span class="tooltiptext">GitHub Repo</span></a>
+            </div>
           <img onClick={() => setToggle1(true)}  src={PersonalProject} alt="landing" className="image"/>
         </div>
         :<div className="modal-container">
@@ -28,12 +29,11 @@ function Projects() {
         </div>}
         {!toggle2
         ? <div className="container">
-            <div className='tool-tip'>
-              <p className='hover-link'>Link to Github</p>
+            <div class="tooltip">Meal Planning Web App
+              <a href='https://github.com/wr2-cooking-app/cooking-app' target='_blank'><span class="tooltiptext">GitHub Repo</span></a>
             </div>
-            <p>Meal Planning Web Application</p>
-            <img onClick={() => setToggle2(true)} src={GroupProject} alt="dashboard" className="image"/>
-          </div>
+              <img onClick={() => setToggle2(true)} src={GroupProject} alt="dashboard" className="image"/>
+            </div>
         : <div className="modal-container">
             <Modal2 toggle2Fn={setToggle2}/>
           </div>}

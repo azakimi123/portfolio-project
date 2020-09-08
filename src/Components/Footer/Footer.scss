@@ -1,0 +1,17 @@
+@import '../../config.scss';
+
+
+  .contact-info{
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    font-family: $font-stack1;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background: rgb(95, 94, 94);
+    // background: blue;
+  }
