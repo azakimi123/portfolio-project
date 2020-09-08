@@ -63,7 +63,7 @@ function Contact(){
                       <input
                           className='contact-send'
                           type="submit" 
-                          value="SEND"
+                          value="Send"
                           onClick={handleSubmit} />
                   </form>
           </div>
