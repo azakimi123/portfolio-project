@@ -26,7 +26,21 @@
 
   p{
     font-size: 40px;
+
+    &:hover{
+      cursor: pointer;
+      .hover-link{
+        visibility: visible;
+      }
+    }
   }
+
+  .hover-link{
+    font-size: 25px;
+    visibility: hidden;
+  }
+
+
 }
 
 .image{

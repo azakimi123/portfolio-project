@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PersonalProject from '../../../images/landing.png';
 import shop from '../../../images/modal1/shop.png';
 import checkout from '../../../images/modal1/checkout.png';
 import admin from '../../../images/modal1/admin.png';
@@ -9,16 +10,17 @@ import './Modal1.scss';
 
 function Modal1(props) {
 
-  const [images, setImages] = useState([shop, checkout, admin, revenue, items]);
+  const [images, setImages] = useState([PersonalProject, shop, checkout, admin, revenue, items]);
   const [description, setDescription] = useState
   ([
+    `Responsive design for different screen sizes`,
     `Product display was sytled useing Sass and image containers.  The cart was managed through Redux.`,
     `Checkout had secure payment methods provided by Stripe.`,
     `Site allowed admin login capabilities to manage products in the shop and to observe shop stats.`,
     `Revenue data was collected from the database to display in Chart.js for the admin.`,
     `Data for most popular items sold was collected from the database and displayed in Chart.js for the admin.`
   ]);
-  
+
   let [index, setIndex] = useState(0);
 
   const handleNext = () => {

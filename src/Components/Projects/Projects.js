@@ -3,6 +3,7 @@ import './Projects.scss';
 import PersonalProject from '../../images/landing.png';
 import GroupProject from '../../images/m2pDash.png';
 import Modal1 from './Modal1/Modal1';
+import Modal2 from './Modal2/Modal2';
 
 
 function Projects() {
@@ -18,6 +19,7 @@ function Projects() {
       <section className='projects-box'>
         {!toggle1
         ? <div className="container">
+          <p className='hover-link'>Link to Github</p>
           <p>Lynne and Lee E-Commerce Site</p>
           <img onClick={() => setToggle1(true)}  src={PersonalProject} alt="landing" className="image"/>
         </div>
@@ -26,12 +28,14 @@ function Projects() {
         </div>}
         {!toggle2
         ? <div className="container">
+            <div className='tool-tip'>
+              <p className='hover-link'>Link to Github</p>
+            </div>
             <p>Meal Planning Web Application</p>
             <img onClick={() => setToggle2(true)} src={GroupProject} alt="dashboard" className="image"/>
           </div>
         : <div className="modal-container">
-            <p>I'm a modal for group project</p>
-            <img onClick={() => setToggle2(false)} className='exit-button' src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
+            <Modal2 toggle2Fn={setToggle2}/>
           </div>}
       </section>
     </div>
