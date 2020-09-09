@@ -14,8 +14,8 @@ module.exports = {
             //method, passing it an object containing the information needed to 
             //sign into the email.
             let transporter = nodemailer.createTransport({
-                host: 'smtp.gmail.com',
-                port: 587,
+                host: 157.245.165.183,
+                port: 4545,
                 service: 'gmail',
                 secure: false,
                 requireTLS: true,
