@@ -17,6 +17,7 @@ module.exports = {
                 host: 'smtp.gmail.com',
                 port: 587,
                 service: 'gmail',
+                secure: false,
                 requireTLS: true,
                 auth: {
                     user: EMAIL,
