@@ -59,7 +59,7 @@ function Home(props){
                   <p>GitHub</p>
                 </section>
                 <section>
-                  <a href='https://www.linkedin.com/in/aaron-zakimi/' target='_blank'>
+                  <a href='https://www.linkedin.com/in/aaron-zakimi' target='_blank'>
                   <img className='home-icons' src='https://image.flaticon.com/icons/svg/2111/2111532.svg' alt='linkedin'/>
                   </a>
                   <p>Linkedin</p>
