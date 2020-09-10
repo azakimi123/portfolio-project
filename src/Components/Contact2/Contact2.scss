@@ -1,0 +1,30 @@
+@import '../../config.scss';
+
+.contact2-main-page{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: $font-stack1;
+}
+
+.contact-box{
+  width: 100vw;
+  height: 90vh;
+  // background: blue;
+
+  h1{
+    font-size: 75px;
+  }
+
+  h3{
+    font-size: 40px;
+    margin-top: -50px;
+  }
+
+  p{
+    font-size: 35px;
+  }
+}

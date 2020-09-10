@@ -3,7 +3,7 @@ import { useAlert } from 'react-alert';
 import axios from 'axios';
 import './Contact.scss';
 
-
+//waiting for DNS verification for email setup to work in production
 function Contact(){
 
   const alert = useAlert();

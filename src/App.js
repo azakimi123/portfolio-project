@@ -7,6 +7,7 @@ import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import Contact2 from './Components/Contact2/Contact2';
 import Footer from './Components/Footer/Footer';
 
 import './App.scss';
@@ -30,7 +31,8 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
+        <Contact2 />
         <Footer />
       </AlertProvider>
     </div>
