@@ -15,7 +15,7 @@ module.exports = {
             //sign into the email.
             let transporter = nodemailer.createTransport({
                 host: 'smtp.gmail.com',
-                port: 587,
+                port: 465,
                 service: 'gmail',
                 secure: false,
                 requireTLS: true,
