@@ -26,7 +26,7 @@ module.exports = {
             });
 
             let info = await transporter.sendMail({
-                from: name,
+                from: `${name} <${EMAIL}>`,
                 to: EMAIL,
                 subject: 'New Message From Portfolio Contact',
                 text: content
