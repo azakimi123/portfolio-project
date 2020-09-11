@@ -31,8 +31,8 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        {/* <Contact /> */}
-        <Contact2 />
+        <Contact />
+        {/* <Contact2 /> */}
         <Footer />
       </AlertProvider>
     </div>
