@@ -15,6 +15,7 @@ function Contact(){
   const handleSubmit = () => {
       handleEmail()
       clearForm()
+      alert.show('Thank you, your message has been sent')
   }
 
   const clearForm = () => {
@@ -25,7 +26,6 @@ function Contact(){
 
   const handleEmail = () => {
       axios.post('/api/contact', {name, email, message})
-      alert.show('Thank you, your message has been sent')
   }
 
       return (
