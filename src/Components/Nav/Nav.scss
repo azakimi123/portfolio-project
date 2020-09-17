@@ -32,6 +32,10 @@
 .nav-logo{
   width: 150px;
   margin-top: -10px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .nav-name{
