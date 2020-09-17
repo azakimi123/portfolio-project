@@ -9,7 +9,9 @@ class Nav extends Component {
     return(
       <div className='nav'>
         <section className='nav-name'>
-          <img className='nav-logo' src={Logo} alt='logo'/>
+          <Link to="section1" smooth={true} offset={-70} duration={1000}>
+           <img className='nav-logo' src={Logo} alt='logo'/>
+          </Link>
         </section>
         <section className='nav-links'>
           <Link to="section1" smooth={true} offset={-70} duration={1000}>
