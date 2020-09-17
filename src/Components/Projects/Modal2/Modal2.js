@@ -13,7 +13,7 @@ function Modal2(props) {
   ([
     `When user is authenticated, dashboard displays user's saved mealplans from the database`,
     `Weekly mealplan view allows users to edit the meals for different days of the week`,
-    `Users can search for recipes as requests are made to  third part API`,
+    `Users can search for recipes as requests are made to a third part API`,
     `Indivdual recipes can be viewed with a serving size calculator with ingredients and directions`,
     `The shopping cart displays a total of all ingredients needed to make the recipes added to the weekly meaplplan`
   ]);

@@ -14,7 +14,7 @@ function Modal1(props) {
   const [description, setDescription] = useState
   ([
     `Responsive design for different screen sizes`,
-    `Product display was sytled useing Sass and image containers.  The cart was managed through Redux.`,
+    `Product display was styled using Sass and image containers.  The cart was managed through Redux.`,
     `Checkout had secure payment methods provided by Stripe.`,
     `Site allowed admin login capabilities to manage products in the shop and to observe shop stats.`,
     `Revenue data was collected from the database to display in Chart.js for the admin.`,
