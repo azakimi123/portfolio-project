@@ -15,16 +15,16 @@ class Nav extends Component {
           <Link to="section1" smooth={true} offset={-70} duration={1000}>
             <span>HOME</span>
           </Link>
-          <Link to='section3' smooth={true} offset={-70} duration={1000}>
+          <Link to='section3' smooth={true} offset={10} duration={1000}>
             <span>ABOUT</span>
           </Link>
-          <Link to="section5" smooth={true} offset={-70} duration={1000}>
+          <Link to="section5" smooth={true} offset={-85} duration={1000}>
             <span>SKILLS</span>
           </Link>
           <Link to="section2" smooth={true} offset={-70} duration={1000}>
             <span>PROJECTS</span>
           </Link>
-          <Link to='section4' smooth={true} offset={-70} duration={1000}>
+          <Link to='section4' smooth={true} offset={-85} duration={1000}>
             <span>CONTACT</span>
           </Link>
         </section>

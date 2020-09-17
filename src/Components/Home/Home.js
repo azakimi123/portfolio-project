@@ -6,50 +6,24 @@ import './Home.scss';
 
 
 function Home(props){
-   let t1 = useRef(null);
-   let t2 = useRef(null);
+  //  let t1 = useRef(null);
+  //  let t2 = useRef(null);
 
 
-   useEffect( () => {
-     t1Fn()
-     t2Fn()
-   }, [])
 
-   const t1Fn = () => {
-    TweenMax.to(
-      t1,
-      3,
-      {
-        opacity: 1,
-        x: 58,
-        ease: Power3.easeOut
-      }
-    )
-   }
-
-   const t2Fn = () => {
-    TweenMax.to(
-      t2,
-      3,
-      {
-        opacity: 1,
-        x: 70,
-        ease: Power3.easeOut
-      }
-    )
-   }
     return(
         <div className='home-cointainer' id='section1'>
           <div className='home-box'>
               <div className='main-container'  >
+                <p className='main-title0'>ALOHA</p>
                 <p 
-                  ref={el => {t1 = el}}
+                  // ref={el => {t1 = el}}
                   className='main-title1'
-                  >Aloha, I'm Aaron Zakimi</p>
+                  >I'm Aaron Zakimi</p>
                 <p
-                  ref={el => {t2 = el}}
+                  // ref={el => {t2 = el}}
                   className='main-title2'
-                  >Passionate About Learning & Teaching</p>
+                  >A Web Developer Passionate About Learning & Teaching</p>
               </div>
               <section className='home-icons-section'>
                 <section>
@@ -87,3 +61,33 @@ export default Home;
 ref={el => {t2 = el}}
 className='main-title2' src={title2} alt='web dev'/>
 </div> */}
+
+
+  //  useEffect( () => {
+  //    t1Fn()
+  //    t2Fn()
+  //  }, [])
+
+  //  const t1Fn = () => {
+  //   TweenMax.to(
+  //     t1,
+  //     3,
+  //     {
+  //       opacity: 1,
+  //       x: 58,
+  //       ease: Power3.easeOut
+  //     }
+  //   )
+  //  }
+
+  //  const t2Fn = () => {
+  //   TweenMax.to(
+  //     t2,
+  //     3,
+  //     {
+  //       opacity: 1,
+  //       x: 70,
+  //       ease: Power3.easeOut
+  //     }
+  //   )
+  //  }

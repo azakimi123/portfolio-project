@@ -3,16 +3,19 @@
 
 .nav{
   width: 100vw;
-  height: 150px;
+  height: 10vh;
   background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* color: white; */
   color: black;
-  /* background: blue; */
+  // background:linear-gradient(to right, red, orange, rgb(255, 190, 69), yellow);
+  background: white;
+
   position: fixed;
   top: 0;
+  box-shadow: $border-shadow;
   z-index: 10;
   
 }
@@ -27,7 +30,8 @@
 }
 
 .nav-logo{
-  width: 300px;
+  width: 150px;
+  margin-top: -10px;
 }
 
 .nav-name{
@@ -37,7 +41,7 @@
 
 .nav-links{
   font-family: $font-stack1;
-  font-size: 30px;
+  font-size: 18px;
 
   span:hover{
     cursor: pointer;
