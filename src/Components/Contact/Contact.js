@@ -30,6 +30,7 @@ function Contact(){
 
       return (
           <div className='contact-main-page' id='section4'>
+              {/* <img src="http://placekitten.com/1500/1000"></img> */}
                   <section className='contact-text'>
                       <p>Want to Collaborate?</p>
                       <p className='contact-text2'>Send me a message and I'll get back to you as soon as possible</p>

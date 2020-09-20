@@ -22,6 +22,7 @@
   height: 80vh;
   display: flex;
   justify-content: space-around;
+  // flex-direction: column;
   // margin-top: 20px;
 
   p{
@@ -58,11 +59,15 @@
 }
 
 .modal-container{
-  width: 80vw;
+  width: 100vw;
   height: 60vh;
   background: rgb(255, 255, 255);
+  // background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  margin-top: 30px;
+  margin-top: 40px;
   z-index: 3;
 }
 
@@ -100,5 +105,14 @@
   visibility: visible;
   font-size: 20px;
   margin-left: 10px;
+}
+
+@media(max-width:1366px){
+  .projects-box{
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
 }
 

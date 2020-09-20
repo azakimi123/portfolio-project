@@ -61,14 +61,14 @@
 
 .home-icons-section{
   margin-top: -60px;
-  width: 30vw;
+  width: 35vw;
   display: flex;
   justify-content: space-between;
 
   p{
     font-size: 25px;
     margin-top: 5px;
-    margin-left: -20px;
+    margin-left: -0px;
   }
 }
 
@@ -80,4 +80,8 @@
     transition: all .5s ease-in-out;
     transform: scale(1.2);
 }
+}
+
+@media(max-width:1366px){
+
 }

@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import './Nav.scss';
 import Logo from '../../images/Logo.png';
 import { Link, animateScroll as scroll } from "react-scroll";
+import menuIcon from '../../images/menu_icon.svg';
 
 
 class Nav extends Component {
   render() {
     return(
+      <div>
       <div className='nav'>
         <section className='nav-name'>
           <Link to="section1" smooth={true} offset={-70} duration={1000}>
@@ -31,6 +33,17 @@ class Nav extends Component {
           </Link>
         </section>
       </div>
+      <div className='nav-mobile'>
+      <section className='nav-name'>
+        <Link to="section1" smooth={true} offset={-70} duration={1000}>
+         <img className='nav-logo' src={Logo} alt='logo'/>
+        </Link>
+      </section>
+      <section className='nav-links'>
+        <img src={menuIcon} alt='menu button' />
+      </section>
+    </div>
+    </div>
     )
   }
 }

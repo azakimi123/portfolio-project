@@ -6,7 +6,8 @@ function Skills(){
   return(
     <div className='skills-container' id='section5'>
       <h1>Skills</h1>
-      <section className='skills-icon-container'>
+      <section className='skills-box'>
+      {/* <section className='skills-icon-container'> */}
         <div>
           <img className='skills-icon' src='https://image.flaticon.com/icons/svg/226/226269.svg' alt='HTML'/>
           <p>HTML5</p>
@@ -35,8 +36,8 @@ function Skills(){
           <img className='skills-icon' src='https://image.flaticon.com/icons/svg/919/919831.svg' alt='Sass'/>
           <p>Sass</p>
         </div>
-      </section>
-      <section className='skills-icon-container2'>
+      {/* </section> */}
+      {/* <section className='skills-icon-container2'> */}
         <div>
           <img className='skills-icon' src='https://b.stripecdn.com/site-srv/assets/img/v3/jobs_v2/thumbnails/stripe-c7f91cf715df9fb9d2198e47de6fc3016a82795e.jpg' alt='Stripe'/>
           <p>Stripe</p>
@@ -54,13 +55,14 @@ function Skills(){
           <p>PostgreSQL</p>
         </div>
         <div>
-          <img className='skills-icon' src='https://repository-images.githubusercontent.com/1272424/d1995000-0ab7-11ea-8ed3-04a082c36b0d' alt='Nodemailer'/>
-          <p>Nodemailer</p>
-        </div>
-        <div>
           <img className='skills-icon2' src='https://www.chartjs.org/img/chartjs-logo.svg' alt='Chart.js'/>
           <p>Chart.js</p>
         </div>
+        <div>
+          <img className='skills-icon' src='https://repository-images.githubusercontent.com/1272424/d1995000-0ab7-11ea-8ed3-04a082c36b0d' alt='Nodemailer'/>
+          <p>Nodemailer</p>
+        </div>
+      {/* </section> */}
       </section>
     </div>
   )

@@ -40,16 +40,18 @@ const handleBack = () => {
 }
 
   return(
-    <div className='modal-container'>
-      <img className='exit-button' onClick={() => props.toggle1Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
-      <section className='project-display-box'>
-        <img className='project-display' src={images[index]} alt='personal project display' />
-        <p className='project-description'>{description[index]}</p>
+    <div className='modal-container1'>
+      <img className='exit-button1' onClick={() => props.toggle1Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
+      <section className='project-display-box1'>
+        <section className='project-display-container1'>
+          <img className='project-display1' src={images[index]} alt='personal project display' />
+        </section>
+        <p className='project-description1'>{description[index]}</p>
+        <div className='project-btn1' >
+          <img onClick={handleBack} className='back-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
+          <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
+        </div>
       </section>
-      <div className='project-btn' >
-        <img onClick={handleBack} className='back-btn' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
-        <img onClick={handleNext}  className='next-btn' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
-      </div>
     </div>
   )
 }

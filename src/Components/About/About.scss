@@ -40,3 +40,22 @@
   border-radius: 2%;
   box-shadow: $border-shadow;
 }
+
+@media(max-width:1366px){
+
+  .about-container{
+    h1{
+      margin-top: -300px;
+    }
+  }
+  .about-box{
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .family-photo{
+    width: 60vw;
+    height: 50vw;
+  }
+}

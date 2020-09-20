@@ -10,15 +10,27 @@
   align-items: center;
   justify-content: center;
   font-family: $font-stack1;
-  background: url('../../images/flower_background.png');
-  background-size: cover;
+  }
+
+  .contact-main-page:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url('../../images/leaves_watercolor.jpg');
+    background-size: cover;
+}
+
 
   h2{
       font-size: 60px;
       margin-top: 110px;
+      z-index: 3;
   }
 
-}
 
 
 .contact-text{
@@ -30,12 +42,14 @@
   flex-direction: column;
   font-size: 3em;
   margin-top: -25px;
+  z-index: 3;
 }
 
 .contact-text2{
   font-size: 25px;
   margin-top: -50px;
   margin-bottom: 170px;
+  z-index: 3;
 
 }
 
@@ -49,7 +63,9 @@ form{
   border: black solid 1px;
   margin: 40px;
   margin-top: -50px;
-  // background: rgb(214, 214, 214);
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.829);
+
 
   .input{
       display: flex;
@@ -58,34 +74,40 @@ form{
       margin: 15px;
       margin-top: 30px;
       font-size: 1.25em;
+      z-index: 3;
 
       input[type='text']{
         font-family: $font-stack1;
         font-size: .75em;
+        z-index: 3;
       }
   }
 
   textarea{
     font-family: $font-stack1;
     font-size: .75em;
+    z-index: 3;
   }
 
   .contact-name-input{
       width: 300px;
       height: 20px;
       margin-top: 10px;
+      z-index: 3;
   }
 
   .contact-email-input{
       width: 300px;
       height: 20px;
       margin-top: 10px;
+      z-index: 3;
   }
 
   .contact-message-input{
       width: 500px;
       height: 100px;
       margin-top: 10px;
+      z-index: 3;
   }
 
   .contact-send{
@@ -100,12 +122,35 @@ form{
       border: none;
       font-family: $font-stack1;
       font-size: 1.25em;
+      z-index: 3;
   
       &:hover{
           background: grey;
           cursor: pointer;
+          z-index: 3;
       }
   }
+}
 
+@media(max-width:1366px){
+  .contact-text{
+    margin-top: -175px;
+  }
+  
+  .contact-text2{
+    margin-top: -30px;
+    margin-bottom: 150px;
+  
+  }
+  form{
+    width: 65vw;
+    height: 40vh;
+    margin: 60px;
+  
+    .contact-message-input{
+        width: 500px;
+        height: 150px;
+    }
 
+  }
 }

@@ -13,7 +13,7 @@ function Modal2(props) {
   ([
     `When user is authenticated, dashboard displays user's saved mealplans from the database`,
     `Weekly mealplan view allows users to edit the meals for different days of the week`,
-    `Users can search for recipes as requests are made to a third part API`,
+    `Users can search for recipes as requests are made to a third party API`,
     `Indivdual recipes can be viewed with a serving size calculator with ingredients and directions`,
     `The shopping cart displays a total of all ingredients needed to make the recipes added to the weekly meaplplan`
   ]);
@@ -37,16 +37,18 @@ const handleBack = () => {
 }
 
   return(
-    <div className='modal-container'>
-      <img className='exit-button' onClick={() => props.toggle2Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
-      <section className='project-display-box'>
-        <img className='project-display' src={images[index]} alt='personal project display' />
-        <p className='project-description'>{description[index]}</p>
+    <div className='modal-container2'>
+      <img className='exit-button2' onClick={() => props.toggle2Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
+      <section className='project-display-box2'>
+        <section className='project-display-container2'>
+          <img className='project-display2' src={images[index]} alt='personal project display' />
+        </section>
+        <p className='project-description2'>{description[index]}</p>
+        <div className='project-btn2' >
+          <img onClick={handleBack} className='back-btn2' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
+          <img onClick={handleNext}  className='next-btn2' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
+        </div>
       </section>
-      <div className='project-btn' >
-        <img onClick={handleBack} className='back-btn' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
-        <img onClick={handleNext}  className='next-btn' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
-      </div>
     </div>
   )
 }

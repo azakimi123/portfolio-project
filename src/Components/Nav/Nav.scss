@@ -1,6 +1,10 @@
 
 @import '../../config.scss';
 
+.nav-mobile{
+  display: none;
+}
+
 .nav{
   width: 100vw;
   height: 10vh;
@@ -50,6 +54,16 @@
   span:hover{
     cursor: pointer;
     color: lightgrey;
+  }
+}
+
+@media(max-width:1366px){
+  .nav{
+    height: 7vh;
+  }
+
+  .nav-links{
+    
   }
 }
 

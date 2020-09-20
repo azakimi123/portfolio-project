@@ -5,13 +5,29 @@
   height: 100vh;
   display: flex;
   // justify-content: space-around;
-  // align-items: center;
+  align-items: center;
   flex-direction: column;
   font-family: $font-stack1;
   text-align: center;
   font-size: 28px;
   background: url('../../images/keyboard.ong.png');
   background-size: cover;
+}
+
+.skills-box{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  // align-items: center;
+  flex-wrap: wrap;
+  // background: rgb(171, 171, 255);
+
+  p{
+    margin-top: 30px;
+  }
 }
 
 .skills-icon-container{
@@ -45,10 +61,47 @@
 }
 
 .skills-icon{
-  padding-top: 35px;
-  width: 6vw;
+  // padding-top: 35px;
+  width: 5.5vw;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .skills-icon2{
-  width: 7.5vw;
+  width: 6.5vw;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: -30px;
+}
+
+@media(max-width:1366px){
+  .skills-box{
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    // background: rgb(171, 171, 255);
+
+    p{
+      margin-top: 30px;
+    }
+  }
+
+  .skills-icon{
+    // padding-top: 35px;
+    width: 6.5vw;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .skills-icon2{
+    width: 7.5vw;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 0px;
+  }
 }

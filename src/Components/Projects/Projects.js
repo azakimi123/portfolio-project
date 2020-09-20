@@ -16,6 +16,7 @@ function Projects() {
   return(
     <div className='projects-container' id='section2'>
       {toggle1 ? <h1 className='projects-title'>Lynne and Lee E-Commerce Site</h1> : toggle2 ? <h1 className='projects-title'>Meal Planning Web Application</h1> : <h1 className='projects-title'>Projects</h1>}
+      {/* {toggle1 || toggle2 ? null : <h1 className='projects-title'>Projects</h1>} */}
       <section className='projects-box'>
         {!toggle1
         ? <div className="container">
@@ -25,7 +26,7 @@ function Projects() {
           <img onClick={() => setToggle1(true)}  src={PersonalProject} alt="landing" className="image"/>
         </div>
         :<div className="modal-container">
-          <Modal1 toggle1Fn={setToggle1}/>
+          <Modal1 className='modal1' toggle1Fn={setToggle1}/>
         </div>}
         {!toggle2
         ? <div className="container">
@@ -35,7 +36,7 @@ function Projects() {
               <img onClick={() => setToggle2(true)} src={GroupProject} alt="dashboard" className="image"/>
             </div>
         : <div className="modal-container">
-            <Modal2 toggle2Fn={setToggle2}/>
+            <Modal2 className='modal2'  toggle2Fn={setToggle2}/>
           </div>}
       </section>
     </div>
