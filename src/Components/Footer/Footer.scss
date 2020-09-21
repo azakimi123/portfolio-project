@@ -17,3 +17,10 @@
     // background: blue;
     z-index: 3;
   }
+
+
+  @media(max-width: 768px){
+    .contact-info{
+      font-size: 22px;
+    }
+  }

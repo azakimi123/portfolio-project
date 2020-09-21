@@ -105,3 +105,19 @@
     margin-top: 0px;
   }
 }
+
+@media(max-width: 768px){
+  .skills-box{
+    width: 100vw;
+  }
+
+  .skills-icon{
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .skills-icon2{
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}

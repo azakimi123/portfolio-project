@@ -183,3 +183,21 @@
     }
   }
 }
+
+@media(max-width: 768px){
+  .project-display-box1{
+    height: 70vh;
+  }
+
+  .project-display-container1{
+    width: 90vw;
+    margin: 0px;
+  
+  }
+
+  .exit-button1{
+    left: 320px;
+    top: -5px;
+  }
+}
+

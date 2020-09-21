@@ -154,3 +154,26 @@ form{
 
   }
 }
+
+@media(max-width: 768px){
+  .contact-text{
+    margin-top: -105px;
+  }
+  
+  .contact-text2{
+    margin-top: -30px;
+    margin-bottom: 150px;
+  
+  }
+  form{
+    width: 65vw;
+    height: 55vh;
+    margin: 60px;
+  
+    .contact-message-input{
+        width: 450px;
+        height: 180px;
+    }
+
+  }
+}
