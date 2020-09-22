@@ -178,6 +178,58 @@ form{
   }
 }
 
+@media(max-width: 414px){
+  .contact-text{
+    margin-top: 30px;
+    font-size: 2.2em;
+  }
+  
+  .contact-text2{
+    font-size: .5em;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  
+  }
+
+  form{
+    width: 90vw;
+    height: 65vh;
+    margin: 60px;
+    margin-bottom: 235px;
+
+    .input{
+      font-size: 1em;
+    }
+  
+    .contact-message-input{
+        width: 300px;
+        height: 130px;
+    }
+
+  }
+
+  .contact-send{
+    width:80px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: white;
+    background: rgb(175, 175, 175);
+    border: none;
+    font-family: $font-stack1;
+    font-size: 1.25em;
+    z-index: 3;
+
+    &:hover{
+        background: grey;
+        cursor: pointer;
+        z-index: 3;
+    }
+}
+}
+
 @media(max-width: 375px){
   .contact-text{
     margin-top: 0px;

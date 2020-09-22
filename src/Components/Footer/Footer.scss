@@ -25,6 +25,12 @@
     }
   }
 
+  @media(max-width: 414px){
+    .contact-info{
+      font-size: 14px;
+    }
+  }
+
   @media(max-width: 375px){
     .contact-info{
       font-size: 12px;
