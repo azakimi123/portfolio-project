@@ -1,112 +1,168 @@
 @import '../../config.scss';
 
 .about-container{
-  width: 100vw;
-  height: 100vh;
+  display: flex;
   flex-direction: column;
-  font-family:$font-stack1;
-  @include flex-center;
-  text-align: center;
+  align-items: center;
+  font-family: $font-stack1;
+  // margin-top: 1.25em;
+  padding: 1.35em;
+  padding-bottom: 2.25em;
+  font-size: 1rem;
 
   h1{
-    font-size: 80px;
-    // margin-bottom: 10px;
-    // margin-top: 105px;
+    margin-bottom: .25em;
   }
 }
 
 .about-box{
-  width: 90vw;
-  height: 43vh;
+  // border: solid goldenrod 2px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 40px;
-  // box-shadow: $border-shadow;
-  margin: 30px;
-  // margin-bottom: 120px;
-  // background: rgb(235, 235, 235);
-  background: white;
-  // margin-bottom: 100px;
+
+
   p{
-    font-size: 30px;
-    padding: 20px;
-    line-height: 50px;
+    // border: solid rgb(32, 119, 218) 2px;
+    text-align: center;
+    line-height: 1.55rem;
+    font-size: 1.25rem;
   }
 }
 
-.family-photo{
-  width: 30vw;
-  height: 40vh;
-  border-radius: 2%;
-  box-shadow: $border-shadow;
-}
 
-@media(max-width:1366px){
-
+@media(min-width: 960px){
   .about-container{
     h1{
-      margin-top: -300px;
+      margin-top: .25em;
     }
   }
   .about-box{
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
-  }
+    flex-direction: row;
 
-  .family-photo{
-    width: 60vw;
-    height: 50vw;
-  }
-}
+    img{
+      max-width: 600px;
+    }
 
-@media(max-width: 768px){
-  .about-box{
-    margin-top: -25px;
-    margin-bottom: 25px;
     p{
-      font-size: 21px;
+      line-height: 1.75rem;
+      font-size: 1.55rem;
+      padding: 1em;
+      max-width: 600px;
     }
   }
 }
 
-@media(max-width: 414px){
-  .about-container{
-    height: 100vh;
-    h1{
-      font-size: 50px;
-      // margin-bottom: 10px;
-      // margin-top: -500px;
-    }
-  }
-  .about-box{
-    width: 98vw;
-    margin-top: -15px;
-    margin-bottom: -5px;
-    // background: lightcoral;
-    p{
-      font-size: 16px;
-      line-height: 30px;
-    }
-  }
-}
 
-@media(max-width: 375px){
-  .about-container{
-    height: 100vh;
-    h1{
-      font-size: 50px;
-      // margin-bottom: 10px;
-      // margin-top: -500px;
-    }
-  }
-  .about-box{
-    margin-top: -15px;
-    margin-bottom: 35px;
-    // background: lightcoral;
-    p{
-      font-size: 16px;
-      line-height: 30px;
-    }
-  }
-}
+
+
+// .about-container{
+//   width: 100vw;
+//   height: 100vh;
+//   flex-direction: column;
+//   font-family:$font-stack1;
+//   @include flex-center;
+//   text-align: center;
+
+//   h1{
+//     font-size: 80px;
+//     // margin-bottom: 10px;
+//     // margin-top: 105px;
+//   }
+// }
+
+// .about-box{
+//   width: 90vw;
+//   height: 43vh;
+//   display: flex;
+//   align-items: center;
+//   padding: 40px;
+//   // box-shadow: $border-shadow;
+//   margin: 30px;
+//   // margin-bottom: 120px;
+//   // background: rgb(235, 235, 235);
+//   background: white;
+//   // margin-bottom: 100px;
+//   p{
+//     font-size: 30px;
+//     padding: 20px;
+//     line-height: 50px;
+//   }
+// }
+
+// .family-photo{
+//   width: 30vw;
+//   height: 40vh;
+//   border-radius: 2%;
+//   box-shadow: $border-shadow;
+// }
+
+// @media(max-width:1366px){
+
+//   .about-container{
+//     h1{
+//       margin-top: -300px;
+//     }
+//   }
+//   .about-box{
+//     flex-direction: column;
+//     padding: 0px;
+//     margin: 0px;
+//   }
+
+//   .family-photo{
+//     width: 60vw;
+//     height: 50vw;
+//   }
+// }
+
+// @media(max-width: 768px){
+//   .about-box{
+//     margin-top: -25px;
+//     margin-bottom: 25px;
+//     p{
+//       font-size: 21px;
+//     }
+//   }
+// }
+
+// @media(max-width: 414px){
+//   .about-container{
+//     height: 100vh;
+//     h1{
+//       font-size: 50px;
+//       // margin-bottom: 10px;
+//       // margin-top: -500px;
+//     }
+//   }
+//   .about-box{
+//     width: 98vw;
+//     margin-top: -15px;
+//     margin-bottom: -5px;
+//     // background: lightcoral;
+//     p{
+//       font-size: 16px;
+//       line-height: 30px;
+//     }
+//   }
+// }
+
+// @media(max-width: 375px){
+//   .about-container{
+//     height: 100vh;
+//     h1{
+//       font-size: 50px;
+//       // margin-bottom: 10px;
+//       // margin-top: -500px;
+//     }
+//   }
+//   .about-box{
+//     margin-top: -15px;
+//     margin-bottom: 35px;
+//     // background: lightcoral;
+//     p{
+//       font-size: 16px;
+//       line-height: 30px;
+//     }
+//   }
+// }
