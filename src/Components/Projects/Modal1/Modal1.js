@@ -41,19 +41,23 @@ const handleBack = () => {
 
   return(
     <div className='modal-container1'>
-      <section className='project-display-box1'>
-        <img className='exit-button1' onClick={() => props.toggle1Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
-        <section className='project-display-container1'>
-          <img className='project-display1' src={images[index]} alt='personal project display' />
+      <h2>Lynne and Lee E-Commerce Site</h2>
+        <div className='modal-box1'>
+        <section className='project-display-box1'>
+            <div className='project-display1' >
+              <img src={images[index]} alt='personal project display' />
+            </div>
+          <p className='project-description1'>{description[index]}</p>
         </section>
-        <p className='project-description1'>{description[index]}</p>
         <div className='project-btn1' >
           <img onClick={handleBack} className='back-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
           <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
         </div>
-      </section>
+        </div>
     </div>
   )
 }
 
 export default Modal1;
+
+{/* <img className='exit-button1' onClick={() => props.toggle1Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/> */}

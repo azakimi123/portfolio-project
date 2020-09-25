@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAlert } from 'react-alert';
 import axios from 'axios';
+import Footer from '../Footer/Footer';
 import './Contact.scss';
 
 //waiting for DNS verification for email setup to work in production
@@ -30,9 +31,8 @@ function Contact(){
 
       return (
           <div className='contact-main-page' id='section4'>
-              {/* <img src="http://placekitten.com/1500/1000"></img> */}
-                  <section className='contact-text'>
-                      <p>Want to Collaborate?</p>
+                  <section className='contact-text-box'>
+                      <h2>Want to Collaborate?</h2>
                       <p className='contact-text2'>Send me a message and I'll get back to you as soon as possible</p>
                   </section>
                   <form>
@@ -67,6 +67,7 @@ function Contact(){
                           value="Send"
                           onClick={handleSubmit} />
                   </form>
+                  {/* <Footer /> */}
           </div>
       )
 }

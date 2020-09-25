@@ -26,7 +26,7 @@ function Nav(){
           <Link to="section1" smooth={true} offset={-70} duration={1000}>
             <span>HOME</span>
           </Link>
-          <Link to='section3' smooth={true} offset={0} duration={1000}>
+          <Link to='section3' smooth={true} offset={-20} duration={1000}>
             <span>ABOUT</span>
           </Link>
           <Link to="section5" smooth={true} offset={-85} duration={1000}>
@@ -52,7 +52,7 @@ function Nav(){
                             <Link to="section1" smooth={true} offset={-70} duration={1000} onClick={handleToggle}>
                                 <li>HOME</li>
                             </Link>
-                            <Link to='section3' smooth={true} offset={-35} duration={1000} onClick={handleToggle}>
+                            <Link to='section3' smooth={true} offset={-60} duration={1000} onClick={handleToggle}>
                                 <li>ABOUT</li>
                             </Link>
                             <Link to="section5" smooth={true} offset={-55} duration={1000} onClick={handleToggle}>

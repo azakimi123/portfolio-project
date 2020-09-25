@@ -37,20 +37,37 @@ const handleBack = () => {
 }
 
   return(
-    <div className='modal-container2'>
-      <img className='exit-button2' onClick={() => props.toggle2Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
-      <section className='project-display-box2'>
-        <section className='project-display-container2'>
-          <img className='project-display2' src={images[index]} alt='personal project display' />
+    <div className='modal-container1'>
+      <h2>Meal Planning Web Application</h2>
+        <div className='modal-box1'>
+        <section className='project-display-box1'>
+            <div className='project-display1' >
+              <img src={images[index]} alt='personal project display' />
+            </div>
+          <p className='project-description1'>{description[index]}</p>
         </section>
-        <p className='project-description2'>{description[index]}</p>
-        <div className='project-btn2' >
-          <img onClick={handleBack} className='back-btn2' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
-          <img onClick={handleNext}  className='next-btn2' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
+        <div className='project-btn1' >
+          <img onClick={handleBack} className='back-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
+          <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
         </div>
-      </section>
+        </div>
     </div>
   )
 }
 
 export default Modal2;
+
+
+{/* <div className='modal-container2'>
+<img className='exit-button2' onClick={() => props.toggle2Fn(false)} src='https://image.flaticon.com/icons/svg/149/149407.svg' alt='exit box'/>
+<section className='project-display-box2'>
+  <section className='project-display-container2'>
+    <img className='project-display2' src={images[index]} alt='personal project display' />
+  </section>
+  <p className='project-description2'>{description[index]}</p>
+  <div className='project-btn2' >
+    <img onClick={handleBack} className='back-btn2' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
+    <img onClick={handleNext}  className='next-btn2' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
+  </div>
+</section>
+</div> */}

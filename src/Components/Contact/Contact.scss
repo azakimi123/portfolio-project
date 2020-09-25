@@ -1,16 +1,12 @@
 @import '../../config.scss';
 
-
 .contact-main-page{
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 90vh;
   font-family: $font-stack1;
-  }
+  @include flex-center;
+  flex-direction: column;
+  z-index: 2;
+}
 
   .contact-main-page:after {
     content: ' ';
@@ -19,244 +15,328 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.3;
     background-image: url('../../images/leaves_watercolor.jpg');
     background-size: cover;
 }
 
-
-  h2{
-      font-size: 60px;
-      margin-top: 110px;
-      z-index: 3;
-  }
-
-
-
-.contact-text{
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-text-box{
+  // border: $border1;
+  @include flex-center;
   flex-direction: column;
-  font-size: 3em;
-  margin-top: -25px;
-  z-index: 3;
-}
-
-.contact-text2{
-  font-size: 25px;
-  margin-top: -50px;
-  margin-bottom: 170px;
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: 3em;
+  padding: 0 .25em;
   z-index: 3;
 
+  p{
+    font-size: 1rem;
+  }
 }
 
 form{
-  width:47vw;
-  height: 60vh;
-  display:flex;
+  width: 80%;
+  // border: $border2;
+  border: grey solid  1px;
+  display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  // align-items: center;
-  box-shadow: $border-shadow;
-  border: black solid 1px;
-  margin: 40px;
-  margin-top: -50px;
+  background: rgba(255, 255, 255, 0.589);
   z-index: 3;
-  background: rgba(255, 255, 255, 0.829);
 
-
-  .input{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: 15px;
-      margin-top: 30px;
-      font-size: 1.25em;
-      z-index: 3;
-
-      input[type='text']{
-        font-family: $font-stack1;
-        font-size: .75em;
-        z-index: 3;
-      }
-  }
-
-  textarea{
-    font-family: $font-stack1;
-    font-size: .75em;
-    z-index: 3;
-  }
-
-  .contact-name-input{
-      width: 300px;
-      height: 20px;
-      margin-top: 10px;
-      z-index: 3;
-  }
-
-  .contact-email-input{
-      width: 300px;
-      height: 20px;
-      margin-top: 10px;
-      z-index: 3;
-  }
-
-  .contact-message-input{
-      width: 500px;
-      height: 100px;
-      margin-top: 10px;
-      z-index: 3;
+  label{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: .75em;
   }
 
   .contact-send{
-      width:80px;
-      height: 30px;
-      margin-left: 25px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      color: white;
-      background: rgb(175, 175, 175);
-      border: none;
-      font-family: $font-stack1;
-      font-size: 1.25em;
-      z-index: 3;
-  
-      &:hover{
-          background: grey;
-          cursor: pointer;
-          z-index: 3;
-      }
+    width: 20%;
+    margin: 1em;
   }
 }
 
-@media(max-width:1366px){
-  .contact-text{
-    margin-top: -175px;
-  }
-  
-  .contact-text2{
-    margin-top: -30px;
-    margin-bottom: 150px;
-  
-  }
-  form{
-    width: 65vw;
-    height: 40vh;
-    margin: 60px;
-  
-    .contact-message-input{
-        width: 500px;
-        height: 150px;
+
+@media(min-width: 675px) {
+  .contact-text-box{
+    p{
+      font-size: 2rem;
     }
-
-  }
-}
-
-@media(max-width: 768px){
-  .contact-text{
-    margin-top: -105px;
-  }
-  
-  .contact-text2{
-    margin-top: -30px;
-    margin-bottom: 150px;
-  
-  }
-  form{
-    width: 65vw;
-    height: 55vh;
-    margin: 60px;
-  
-    .contact-message-input{
-        width: 450px;
-        height: 180px;
-    }
-
-  }
-}
-
-@media(max-width: 414px){
-  .contact-text{
-    margin-top: 30px;
-    font-size: 2.2em;
-  }
-  
-  .contact-text2{
-    font-size: .5em;
-    margin-top: -30px;
-    margin-bottom: -30px;
-  
   }
 
   form{
-    width: 90vw;
-    height: 65vh;
-    margin: 60px;
-    margin-bottom: 235px;
-
-    .input{
-      font-size: 1em;
+    max-width: 600px;
+  
+    label{
+      max-width: 400px;
     }
   
-    .contact-message-input{
-        width: 300px;
-        height: 130px;
+    .contact-send{
+      max-width: 100px;
+      margin: 1em;
     }
-
-  }
-
-  .contact-send{
-    width:80px;
-    height: 30px;
-    margin-left: 25px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    color: white;
-    background: rgb(175, 175, 175);
-    border: none;
-    font-family: $font-stack1;
-    font-size: 1.25em;
-    z-index: 3;
-
-    &:hover{
-        background: grey;
-        cursor: pointer;
-        z-index: 3;
-    }
-}
-}
-
-@media(max-width: 375px){
-  .contact-text{
-    margin-top: 0px;
-    font-size: 2em;
-  }
-  
-  .contact-text2{
-    font-size: .5em;
-    margin-top: -30px;
-    margin-bottom: 10px;
-  
-  }
-
-  form{
-    width: 90vw;
-    height: 75vh;
-    margin: 60px;
-    margin-bottom: 175px;
-
-    .input{
-      font-size: 1em;
-    }
-  
-    .contact-message-input{
-        width: 300px;
-        height: 160px;
-    }
-
   }
 }
+
+// .contact-main-page{
+//   width: 100vw;
+//   height: 100vh;
+//   text-align: center;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-family: $font-stack1;
+//   }
+
+//   .contact-main-page:after {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     opacity: 0.4;
+//     background-image: url('../../images/leaves_watercolor.jpg');
+//     background-size: cover;
+// }
+
+
+//   h2{
+//       font-size: 60px;
+//       margin-top: 110px;
+//       z-index: 3;
+//   }
+
+
+
+// .contact-text{
+//   width: 100vw;
+//   height: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   font-size: 3em;
+//   margin-top: -25px;
+//   z-index: 3;
+// }
+
+// .contact-text2{
+//   font-size: 25px;
+//   margin-top: -50px;
+//   margin-bottom: 170px;
+//   z-index: 3;
+
+// }
+
+// form{
+//   width:47vw;
+//   height: 60vh;
+//   display:flex;
+//   flex-direction: column;
+//   // align-items: center;
+//   box-shadow: $border-shadow;
+//   border: black solid 1px;
+//   margin: 40px;
+//   margin-top: -50px;
+//   z-index: 3;
+//   background: rgba(255, 255, 255, 0.829);
+
+
+//   .input{
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       margin: 15px;
+//       margin-top: 30px;
+//       font-size: 1.25em;
+//       z-index: 3;
+
+//       input[type='text']{
+//         font-family: $font-stack1;
+//         font-size: .75em;
+//         z-index: 3;
+//       }
+//   }
+
+//   textarea{
+//     font-family: $font-stack1;
+//     font-size: .75em;
+//     z-index: 3;
+//   }
+
+//   .contact-name-input{
+//       width: 300px;
+//       height: 20px;
+//       margin-top: 10px;
+//       z-index: 3;
+//   }
+
+//   .contact-email-input{
+//       width: 300px;
+//       height: 20px;
+//       margin-top: 10px;
+//       z-index: 3;
+//   }
+
+//   .contact-message-input{
+//       width: 500px;
+//       height: 100px;
+//       margin-top: 10px;
+//       z-index: 3;
+//   }
+
+//   .contact-send{
+//       width:80px;
+//       height: 30px;
+//       margin-left: 25px;
+//       margin-top: 30px;
+//       margin-bottom: 10px;
+//       border-radius: 8px;
+//       color: white;
+//       background: rgb(175, 175, 175);
+//       border: none;
+//       font-family: $font-stack1;
+//       font-size: 1.25em;
+//       z-index: 3;
+  
+//       &:hover{
+//           background: grey;
+//           cursor: pointer;
+//           z-index: 3;
+//       }
+//   }
+// }
+
+// @media(max-width:1366px){
+//   .contact-text{
+//     margin-top: -175px;
+//   }
+  
+//   .contact-text2{
+//     margin-top: -30px;
+//     margin-bottom: 150px;
+  
+//   }
+//   form{
+//     width: 65vw;
+//     height: 40vh;
+//     margin: 60px;
+  
+//     .contact-message-input{
+//         width: 500px;
+//         height: 150px;
+//     }
+
+//   }
+// }
+
+// @media(max-width: 768px){
+//   .contact-text{
+//     margin-top: -105px;
+//   }
+  
+//   .contact-text2{
+//     margin-top: -30px;
+//     margin-bottom: 150px;
+  
+//   }
+//   form{
+//     width: 65vw;
+//     height: 55vh;
+//     margin: 60px;
+  
+//     .contact-message-input{
+//         width: 450px;
+//         height: 180px;
+//     }
+
+//   }
+// }
+
+// @media(max-width: 414px){
+//   .contact-text{
+//     margin-top: 30px;
+//     font-size: 2.2em;
+//   }
+  
+//   .contact-text2{
+//     font-size: .5em;
+//     margin-top: -30px;
+//     margin-bottom: -30px;
+  
+//   }
+
+//   form{
+//     width: 90vw;
+//     height: 65vh;
+//     margin: 60px;
+//     margin-bottom: 235px;
+
+//     .input{
+//       font-size: 1em;
+//     }
+  
+//     .contact-message-input{
+//         width: 300px;
+//         height: 130px;
+//     }
+
+//   }
+
+//   .contact-send{
+//     width:80px;
+//     height: 30px;
+//     margin-left: 25px;
+//     margin-top: -10px;
+//     margin-bottom: 10px;
+//     border-radius: 8px;
+//     color: white;
+//     background: rgb(175, 175, 175);
+//     border: none;
+//     font-family: $font-stack1;
+//     font-size: 1.25em;
+//     z-index: 3;
+
+//     &:hover{
+//         background: grey;
+//         cursor: pointer;
+//         z-index: 3;
+//     }
+// }
+// }
+
+// @media(max-width: 375px){
+//   .contact-text{
+//     margin-top: 0px;
+//     font-size: 2em;
+//   }
+  
+//   .contact-text2{
+//     font-size: .5em;
+//     margin-top: -30px;
+//     margin-bottom: 10px;
+  
+//   }
+
+//   form{
+//     width: 90vw;
+//     height: 75vh;
+//     margin: 60px;
+//     margin-bottom: 175px;
+
+//     .input{
+//       font-size: 1em;
+//     }
+  
+//     .contact-message-input{
+//         width: 300px;
+//         height: 160px;
+//     }
+
+//   }
+// }

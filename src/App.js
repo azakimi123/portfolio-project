@@ -33,7 +33,7 @@ function App() {
         <Projects />
         <Contact />
         {/* <Contact2 /> */}
-        <Footer />
+        <Footer  className='footer'/>
       </AlertProvider>
     </div>
   );

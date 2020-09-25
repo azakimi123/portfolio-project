@@ -1,181 +1,190 @@
 @import '../../config.scss';
 
-
 .projects-container{
-  width: 100vw;
-  height: 100vh;
-  margin-top: 80px;
-  text-align: center;
-  font-family: $font-stack1;
-
-  h1{
-    font-size: 4em;
-    padding-top: 40px;
-    margin-bottom: -30px;
-    // background:white;
-  }
-}
-
-
-.projects-box{
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  justify-content: space-around;
-  // flex-direction: column;
-  // margin-top: 20px;
-
-  p{
-    font-size: 2em;
-
-    &:hover{
-      cursor: pointer;
-      .hover-link{
-        visibility: visible;
-      }
-    }
-  }
-
-  .hover-link{
-    font-size: 25px;
-    visibility: hidden;
-  }
-
-
-}
-
-.image{
-  width: 45vw;
-  margin-top: 25px;
-  box-shadow: $border-shadow;
-  border-radius: 7px;
-  z-index: 1;
-
-  &:hover{
-    cursor: pointer;
-    opacity: .5;
-    border: solid black;
-    }
-}
-
-.modal-container{
-  width: 100vw;
-  height: 60vh;
-  background: rgb(255, 255, 255);
-  // background: pink;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin-top: 40px;
-  z-index: 3;
-}
-
-.container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-}
-
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  font-size: 2em;
-  width: 620px;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
+  justify-content: center;
+  font-family: $font-stack1;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
-  cursor: pointer;
-  visibility: visible;
-  font-size: 20px;
-  margin-left: 10px;
-}
 
-@media(max-width:1366px){
-  .projects-box{
-    flex-direction: column;
-    justify-content: space-evenly;
+// .projects-container{
+//   width: 100vw;
+//   height: 100vh;
+//   margin-top: 80px;
+//   text-align: center;
+//   font-family: $font-stack1;
 
-  }
+//   h1{
+//     font-size: 4em;
+//     padding-top: 40px;
+//     margin-bottom: -30px;
+//     // background:white;
+//   }
+// }
 
-}
 
-@media(max-width: 768px){
-  .container{
-    margin-top: 0px;
-  }
+// .projects-box{
+//   width: 100vw;
+//   height: 80vh;
+//   display: flex;
+//   justify-content: space-around;
+//   // flex-direction: column;
+//   // margin-top: 20px;
 
-  .projects-container{
+//   p{
+//     font-size: 2em;
+
+//     &:hover{
+//       cursor: pointer;
+//       .hover-link{
+//         visibility: visible;
+//       }
+//     }
+//   }
+
+//   .hover-link{
+//     font-size: 25px;
+//     visibility: hidden;
+//   }
+
+
+// }
+
+// .image{
+//   width: 45vw;
+//   margin-top: 25px;
+//   box-shadow: $border-shadow;
+//   border-radius: 7px;
+//   z-index: 1;
+
+//   &:hover{
+//     cursor: pointer;
+//     opacity: .5;
+//     border: solid black;
+//     }
+// }
+
+// .modal-container{
+//   width: 100vw;
+//   height: 60vh;
+//   background: rgb(255, 255, 255);
+//   // background: pink;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   margin-top: 40px;
+//   z-index: 3;
+// }
+
+// .container{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-top: 100px;
+// }
+
+
+// .tooltip {
+//   position: relative;
+//   display: inline-block;
+//   font-size: 2em;
+//   width: 620px;
+// }
+
+// .tooltip .tooltiptext {
+//   visibility: hidden;
+//   width: 120px;
+//   background-color: black;
+//   color: #fff;
+//   text-align: center;
+//   border-radius: 6px;
+//   padding: 5px 0;
+
+//   /* Position the tooltip */
+//   position: absolute;
+//   z-index: 1;
+// }
+
+// .tooltip:hover .tooltiptext {
+//   cursor: pointer;
+//   visibility: visible;
+//   font-size: 20px;
+//   margin-left: 10px;
+// }
+
+// @media(max-width:1366px){
+//   .projects-box{
+//     flex-direction: column;
+//     justify-content: space-evenly;
+
+//   }
+
+// }
+
+// @media(max-width: 768px){
+//   .container{
+//     margin-top: 0px;
+//   }
+
+//   .projects-container{
   
-    h1{
-      font-size: 3em;
-      padding-top: 40px;
-      margin-bottom: -30px;
-    }
-  }
-}
+//     h1{
+//       font-size: 3em;
+//       padding-top: 40px;
+//       margin-bottom: -30px;
+//     }
+//   }
+// }
 
-@media(max-width: 414px){
-  .container{
-    margin-top: 0px;
-  }
+// @media(max-width: 414px){
+//   .container{
+//     margin-top: 0px;
+//   }
 
-  .projects-container{
+//   .projects-container{
   
-    h1{
-      font-size: 2.5em;
-      padding-top: 40px;
-      margin-bottom: -30px;
-      margin-top: -30px;
-    }
-  }
+//     h1{
+//       font-size: 2.5em;
+//       padding-top: 40px;
+//       margin-bottom: -30px;
+//       margin-top: -30px;
+//     }
+//   }
 
-  .image{
-    width: 75vw;
-    margin-top: 25px;
-  }
+//   .image{
+//     width: 75vw;
+//     margin-top: 25px;
+//   }
 
-  .tooltip{
-    font-size: 1.5em;
-  }
-}
+//   .tooltip{
+//     font-size: 1.5em;
+//   }
+// }
 
-@media(max-width: 375px){
-  .container{
-    margin-top: 0px;
-  }
+// @media(max-width: 375px){
+//   .container{
+//     margin-top: 0px;
+//   }
 
-  .projects-container{
+//   .projects-container{
   
-    h1{
-      font-size: 2.5em;
-      padding-top: 40px;
-      margin-bottom: -30px;
-    }
-  }
+//     h1{
+//       font-size: 2.5em;
+//       padding-top: 40px;
+//       margin-bottom: -30px;
+//     }
+//   }
 
-  .image{
-    width: 75vw;
-    margin-top: 25px;
-  }
+//   .image{
+//     width: 75vw;
+//     margin-top: 25px;
+//   }
 
-  .tooltip{
-    font-size: 1.5em;
-  }
-}
+//   .tooltip{
+//     font-size: 1.5em;
+//   }
+// }

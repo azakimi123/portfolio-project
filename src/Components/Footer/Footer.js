@@ -4,7 +4,7 @@ import './Footer.scss';
 
 function Footer() {
   return(
-    <div>
+    <div className='footer-container'>
       <section className='contact-info'>
         {/* <span>Aaron Zakimi</span> */}
         <span>Phone: (208) 243-2477</span>
