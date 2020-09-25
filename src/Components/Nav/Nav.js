@@ -15,7 +15,7 @@ function Nav(){
 
   console.log(dropdownToggle)
     return(
-      <div>
+      <div className='nav-container'>
       <div className='nav'>
         <section className='nav-name'>
           <Link to="section1" smooth={true} offset={-70} duration={1000}>
@@ -44,9 +44,10 @@ function Nav(){
         <Link to="section1" smooth={true} offset={-70} duration={1000}>
          <img className='nav-logo' src={Logo} alt='logo'/>
         </Link>
-        <img className='menu-button' src={menuIcon} alt='menu button' onClick={handleToggle} />
-        {dropdownToggle
-                ? (
+        <div className='drop-box'>
+          <img className='menu-button' src={menuIcon} alt='menu button' onClick={handleToggle} />
+          {dropdownToggle
+                ?    
                         <ul>
                             <Link to="section1" smooth={true} offset={-70} duration={1000} onClick={handleToggle}>
                                 <li>HOME</li>
@@ -64,9 +65,11 @@ function Nav(){
                                 <li>CONTACT</li>
                             </Link>
                         </ul>
-                )     
+                      
+                     
                 : null
                 }
+          </div>
       </div>
     </div>
     )
