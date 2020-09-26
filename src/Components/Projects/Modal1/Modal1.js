@@ -48,11 +48,11 @@ const handleBack = () => {
               <img src={images[index]} alt='personal project display' />
             </div>
           <p className='project-description1'>{description[index]}</p>
-        </section>
         <div className='project-btn1' >
           <img onClick={handleBack} className='back-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
           <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
         </div>
+        </section>
         </div>
     </div>
   )
