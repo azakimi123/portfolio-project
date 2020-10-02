@@ -39,6 +39,7 @@ const handleBack = () => {
     }
 }
 
+// console.log(index)
   return(
     <div className='modal-container1'>
       <h2>Lynne and Lee E-Commerce Site</h2>
@@ -52,7 +53,7 @@ const handleBack = () => {
         </div>
         <div className='project-btn1' >
           <img onClick={handleBack} className='back-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
-          <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
+          <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='next'/>
         </div>
     </div>
   )

@@ -6,6 +6,7 @@
   @include flex-center;
   flex-direction: column;
   z-index: 2;
+  // background: blue;
 }
 
   .contact-main-page:after {
@@ -13,11 +14,12 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     z-index: 1;
     opacity: 0.3;
     background-image: url('../../images/leaves_watercolor.jpg');
     background-size: cover;
+    // border: $border1;
 }
 
 .contact-text-box{

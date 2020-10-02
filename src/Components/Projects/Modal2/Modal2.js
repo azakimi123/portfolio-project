@@ -6,50 +6,59 @@ import recipe from '../../../images/modal2/recipe.png';
 import search from '../../../images/modal2/search.png';
 import './Modal2.scss';
 
+// import PersonalProject from '../../../images/landing.png';
+// import shop from '../../../images/modal1/shop.png';
+// import checkout from '../../../images/modal1/checkout.png';
+// import admin from '../../../images/modal1/admin.png';
+// import revenue from '../../../images/modal1/revenue.png';
+// import items from '../../../images/modal1/items.png';
+
 
 function Modal2(props) {
-  const [images, setImages] = useState([dashboard, planner, search, recipe, cart]);
-  const [description, setDescription] = useState
+
+  const [images1, setImages1] = useState([dashboard, planner, search, recipe, cart]);
+  const [description1, setDescription1] = useState
   ([
     `When user is authenticated, dashboard displays user's saved mealplans from the database`,
     `Weekly mealplan view allows users to edit the meals for different days of the week`,
     `Users can search for recipes as requests are made to a third party API`,
     `Indivdual recipes can be viewed with a serving size calculator with ingredients and directions`,
-    `The shopping cart displays a total of all ingredients needed to make the recipes added to the weekly meaplplan`
+    `The shopping cart displays a total of all ingredients needed to make the recipes added to the weekly meal plan`
   ]);
-  
-  let [index, setIndex] = useState(0);
+
+  let [index1, setIndex1] = useState(0);
 
   const handleNext = () => {
-    if(index >= 4) {
-        setIndex(0)
+    if(index1 >= 4) {
+        setIndex1(0)
     } else {
-        setIndex(index += 1)
+        setIndex1(index1 += 1)
     }
 }
 
 const handleBack = () => {
-    if(index <= 0) {
-        setIndex(4)
+    if(index1 <= 0) {
+        setIndex1(4)
     } else {
-        setIndex(index -= 1)
+        setIndex1(index1 -= 1)
     }
 }
 
+// console.log(index)
   return(
     <div className='modal-container1'>
-      <h2>Meal Planning Web Application</h2>
+      <h2>Meal Planning Application</h2>
         <div className='modal-box1'>
         <section className='project-display-box1'>
             <div className='project-display1' >
-              <img src={images[index]} alt='personal project display' />
+              <img src={images1[index1]} alt='personal project display' />
             </div>
-          <p className='project-description1'>{description[index]}</p>
+          <p className='project-description1'>{description1[index1]}</p>
         </section>
+        </div>
         <div className='project-btn1' >
           <img onClick={handleBack} className='back-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='forward'/>
           <img onClick={handleNext}  className='next-btn1' src='https://image.flaticon.com/icons/svg/860/860790.svg' alt='back'/>
-        </div>
         </div>
     </div>
   )
@@ -71,3 +80,14 @@ export default Modal2;
   </div>
 </section>
 </div> */}
+
+
+// const [images, setImages] = useState([dashboard, planner, search, recipe, cart]);
+// const [description, setDescription] = useState
+// ([
+//   `When user is authenticated, dashboard displays user's saved mealplans from the database`,
+//   `Weekly mealplan view allows users to edit the meals for different days of the week`,
+//   `Users can search for recipes as requests are made to a third party API`,
+//   `Indivdual recipes can be viewed with a serving size calculator with ingredients and directions`,
+//   `The shopping cart displays a total of all ingredients needed to make the recipes added to the weekly meaplplan`
+// ]);

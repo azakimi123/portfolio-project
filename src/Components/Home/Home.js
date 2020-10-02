@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react';
-import { TweenMax, Power3 } from 'gsap';
-import title1 from '../../images/title1.png';
-import title2 from '../../images/webDev.png';
+import React from 'react';
+// import { TweenMax, Power3 } from 'gsap';
+// import title1 from '../../images/title1.png';
+// import title2 from '../../images/webDev.png';
 import './Home.scss';
 
 
