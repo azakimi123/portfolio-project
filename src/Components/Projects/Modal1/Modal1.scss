@@ -11,6 +11,13 @@
   max-width: 1000px;
   max-height: 400px;
 
+  a{
+    color: black;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
   h2{
     font-size: 2rem;
   }
