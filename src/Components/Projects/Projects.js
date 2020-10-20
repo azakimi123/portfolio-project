@@ -15,7 +15,7 @@ function Projects() {
   console.log(toggle1)
   return(
     <div className='projects-container' id='section2'>
-      {toggle1 ? <h1 className='projects-title'>Lynne and Lee E-Commerce Site</h1> : toggle2 ? <h1 className='projects-title'>Meal Planning Web Application</h1> : <h1 className='projects-title'>Projects</h1>}
+      {toggle1 ? <a href='https://lynneandlee.com/' target='_blank'><h1 className='projects-title'>Lynne and Lee E-Commerce Site</h1></a> : toggle2 ? <a href='https://meals2plan.com/' target='_blank'><h1 className='projects-title'>Meal Planning Web Application</h1></a> : <h1 className='projects-title'>Projects</h1>}
       {/* {toggle1 || toggle2 ? null : <h1 className='projects-title'>Projects</h1>} */}
       <Modal1 />
       <Modal2 />
