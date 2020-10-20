@@ -42,7 +42,7 @@ const handleBack = () => {
 // console.log(index)
   return(
     <div className='modal-container1'>
-      <h2>Lynne and Lee E-Commerce Site</h2>
+      <a href='https://lynneandlee.com/' target='_blank'><h2>Lynne and Lee E-Commerce Site</h2></a>
         <div className='modal-box1'>
         <section className='project-display-box1'>
             <div className='project-display1' >
